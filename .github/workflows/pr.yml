@@ -1,0 +1,11 @@
+name: On Pull Request
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A Pull Request event triggered this workflow!"
