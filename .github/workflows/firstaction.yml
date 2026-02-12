@@ -13,3 +13,15 @@ jobs:
 
       - name: Echo message
         run: echo "GitHub Actions is working!"
+
+      - name: Show current directory
+        run: pwd
+
+      - name: List all files
+        run: ls -a
+
+      - name: Print environment variables
+        run: env
+
+      - name: Show OS details
+        run: uname -a
